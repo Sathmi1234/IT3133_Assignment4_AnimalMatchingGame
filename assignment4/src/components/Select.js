@@ -9,7 +9,7 @@ export default function Select({ animals,selection }) {
         {   
             animals.map((animal) => (
                 <Col xs={6} md={3} className="text-center">
-                    <Button variant="light" className="p-2"
+                    <Button variant="outline-warning" className="p-2"
                             onClick={()=>selection(animal.name)}>
                         <img
                             src={require(`../assets/fig/${animal.img}`)}
