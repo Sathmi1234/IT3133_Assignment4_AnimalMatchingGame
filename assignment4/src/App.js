@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Result from './components/Result';
+import Name from './components/Name';
+import Select from './components/Select';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br/>
+      <h1>Animal Matching Game</h1>
+      <Container>
+        <Row>
+          <Col><Result/></Col>
+          <Col><Name/></Col>
+          <Col><Select/></Col>
+        </Row>
+      </Container>
     </div>
   );
 }
