@@ -28,7 +28,7 @@ function App() {
       <h1><span className='component-border'>Animal Matching Game </span></h1><br/>
       <Container>
         <Row>
-          <Col xs={3}><div className='component-border'><Result/></div></Col>
+          <Col xs={3}><div className='component-border'><Result result={result}/></div></Col>
           <Col xs={3}><div className='component-border'><Name name={currentAnimal.name}/></div></Col>
           <Col><div className='component-border'><Select animals={animals} selection={selection}/></div></Col>
         </Row>
