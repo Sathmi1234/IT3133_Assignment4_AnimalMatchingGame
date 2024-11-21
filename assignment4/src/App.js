@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Result from './components/Result';
 import Name from './components/Name';
 import Select from './components/Select';
+import { animals } from './assets/data/AnimalsDb';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Row>
           <Col xs={3}><div className='component-border'><Result/></div></Col>
           <Col xs={3}><div className='component-border'><Name/></div></Col>
-          <Col><div className='component-border'><Select/></div></Col>
+          <Col><div className='component-border'><Select animals={animals}/></div></Col>
         </Row>
       </Container>
     </div>
