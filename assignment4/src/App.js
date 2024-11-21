@@ -7,8 +7,13 @@ import Result from './components/Result';
 import Name from './components/Name';
 import Select from './components/Select';
 import { animals } from './assets/data/AnimalsDb';
+import { useState } from 'react';
 
 function App() {
+  const [currentAnimal, setCurrentAnimal]=useState(
+    animals[Math.floor(Math.random()* animals.length)]
+  )
+
   return (
     <div className="App">
       <br/>
@@ -16,7 +21,7 @@ function App() {
       <Container>
         <Row>
           <Col xs={3}><div className='component-border'><Result/></div></Col>
-          <Col xs={3}><div className='component-border'><Name/></div></Col>
+          <Col xs={3}><div className='component-border'><Name name={currentAnimal.name}/></div></Col>
           <Col><div className='component-border'><Select animals={animals}/></div></Col>
         </Row>
       </Container>
