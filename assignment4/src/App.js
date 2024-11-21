@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
       <br/>
-      <h1>Animal Matching Game</h1>
+      <h1><span className='component-border'>Animal Matching Game </span></h1><br/>
       <Container>
         <Row>
-          <Col><Result/></Col>
-          <Col><Name/></Col>
-          <Col><Select/></Col>
+          <Col xs={3}><div className='component-border'><Result/></div></Col>
+          <Col xs={3}><div className='component-border'><Name/></div></Col>
+          <Col><div className='component-border'><Select/></div></Col>
         </Row>
       </Container>
     </div>
